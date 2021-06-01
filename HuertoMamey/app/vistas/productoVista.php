@@ -7,10 +7,10 @@ if($datos["data"]["tipo"]==1){
   print "<p>".html_entity_decode($datos["data"]["descripcion"])."</p>";
 
   print "<h4>¿A quién va dirigido?:</h4>";
-  print "<p>".$datos["data"]["publico"]."</p>";
+  print "<p>".$datos["data"]["obj"]."</p>";
 
-  print "<h4>Elaboración:</h4>";
-  print "<p>".$datos["data"]["objetivo"]."</p>";
+  print "<h4>Objetivos:</h4>";
+  print "<p>".$datos["data"]["beneficios"]."</p>";
 
   print "<h4>Precio (MXN):</h4>";
   print "<p>$".number_format($datos["data"]["precio"],2)."</p>";
@@ -19,18 +19,18 @@ if($datos["data"]["tipo"]==1){
   print "<p>".$datos["data"]["necesario"]."</p>";
 } else if($datos["data"]["tipo"]==2){
   print "<h4>Proveedor:</h4>";
-  print "<p>".$datos["data"]["autor"]."</p>";
+  print "<p>".$datos["data"]["prov"]."</p>";
 
   print "<h4>Direccion:</h4>";
-  print "<p>".$datos["data"]["editorial"]."</p>";
+  print "<p>".$datos["data"]["direccion"]."</p>";
 
   print "<h4>Tamaño del producto:</h4>";
-  print "<p>".$datos["data"]["pag"]."</p>";
+  print "<p>".$datos["data"]["tam"]."</p>";
 
   print "<h4>Precio (MXN):</h4>";
   print "<p>$".number_format($datos["data"]["precio"],2)."</p>";
 
-  print "<h4>Descripción:</h4>";
+  print "<h4>Resumen:</h4>";
   print "<p>".html_entity_decode($datos["data"]["descripcion"])."</p>";
 }
 $regresa = ($datos["regresa"]=="")? "tienda" : $datos["regresa"];

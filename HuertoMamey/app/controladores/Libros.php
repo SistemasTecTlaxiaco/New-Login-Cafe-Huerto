@@ -2,7 +2,7 @@
 /**
  * Controlador Libros
  */
-class LibrosCafe extends Controlador{
+class Libros extends Controlador{
   private $modelo;
 
   function __construct()

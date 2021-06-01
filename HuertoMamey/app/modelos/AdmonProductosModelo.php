@@ -67,11 +67,11 @@ class AdmonProductosModelo{
      //$sql.= "(NOW()), ";                             //17. fecha alta
      $sql.= "modificado_dt=(NOW()), ";                 //18. fecha modificado
      //$sql.= "'', ";                                  //19. fecha baja
-     $sql.= "autor='".$data['autor']."', ";            //20. autor
-     $sql.= "editorial='".$data['editorial']."', ";    //21. editorial
-     $sql.= "pag=".$data['pag'].", ";                  //22. pag
-     $sql.= "publico='".$data['publico']."', ";        //23. publico
-     $sql.= "objetivo='".$data['objetivo']."', ";      //24. objetivo
+     $sql.= "prov='".$data['prov']."', ";            //20. autor
+     $sql.= "direccion='".$data['direccion']."', ";    //21. editorial
+     $sql.= "tam=".$data['tam'].", ";                  //22. pag
+     $sql.= "obj='".$data['obj']."', ";        //23. publico
+     $sql.= "beneficios='".$data['beneficios']."', ";      //24. objetivo
      $sql.= "necesario='".$data['necesario']."' ";     //25. necesario
      $sql.= "WHERE id=".$data['id'];
 
@@ -102,11 +102,11 @@ class AdmonProductosModelo{
    $sql.= "(NOW()), ";                        //17. fecha alta
    $sql.= "'', ";                             //18. fecha modificado
    $sql.= "'', ";                             //19. fecha baja
-   $sql.= "'".$data['autor']."', ";           //20. autor
-   $sql.= "'".$data['editorial']."', ";       //21. editorial
-   $sql.= $data['pag'].", ";                  //22. pag
-   $sql.= "'".$data['publico']."', ";         //23. publico
-   $sql.= "'".$data['objetivo']."', ";        //24. objetivo
+   $sql.= "'".$data['prov']."', ";           //20. autor
+   $sql.= "'".$data['direccion']."', ";       //21. editorial
+   $sql.= $data['tam'].", ";                  //22. pag
+   $sql.= "'".$data['obj']."', ";         //23. publico
+   $sql.= "'".$data['beneficios']."', ";        //24. objetivo
    $sql.= "'".$data['necesario']."')";       //25. necesario
    //print $sql;
    return $this->db->queryNoSelect($sql);

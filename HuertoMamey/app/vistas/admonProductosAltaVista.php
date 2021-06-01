@@ -67,11 +67,11 @@
 
     <div id="libro">
       <div class="form-group text-left">
-      <label for="autor">* Proveedor:</label>
-      <input type="text" name="autor" class="form-control"
-      placeholder="Escribe el autor del libro"
+      <label for="prov">* Proveedor:</label>
+      <input type="text" name="prov" class="form-control"
+      placeholder="Escribe el proveedor del producto"
       value="<?php 
-      print isset($datos['data']['autor'])?$datos['data']['autor']:''; 
+      print isset($datos['data']['prov'])?$datos['data']['prov']:''; 
       ?>"
       <?php
       if (isset($datos["baja"])) {
@@ -82,11 +82,11 @@
     </div>
 
       <div class="form-group text-left">
-      <label for="editorial">* Direccion:</label>
-      <input type="text" name="editorial" class="form-control" 
-      placeholder="Escribe la editorial del libro"
+      <label for="direccion">* Dirección:</label>
+      <input type="text" name="direccion" class="form-control" 
+      placeholder="Escribe la dirección del proveedor"
       value="<?php 
-      print isset($datos['data']['editorial'])?$datos['data']['editorial']:''; 
+      print isset($datos['data']['direccion'])?$datos['data']['direccion']:''; 
       ?>"
       <?php
       if (isset($datos["baja"])) {
@@ -97,11 +97,11 @@
     </div>
 
       <div class="form-group text-left">
-      <label for="pag">* Tamaño:</label>
-      <input type="text" name="pag" class="form-control" 
-      placeholder="Escribe el número de páginas del libro"
+      <label for="tam">* Tamaño:</label>
+      <input type="text" name="tam" class="form-control" 
+      placeholder="Escribe el tamaño del producto"
       value="<?php 
-      print isset($datos['data']['pag'])?$datos['data']['pag']:''; 
+      print isset($datos['data']['tam'])?$datos['data']['tam']:''; 
       ?>"
       <?php
       if (isset($datos["baja"])) {
@@ -115,11 +115,11 @@
 
     <div id="curso">
     <div class="form-group text-left">
-      <label for="publico">* Origen:</label>
-      <input type="text" name="publico" class="form-control" 
-      placeholder="Escribe el público objetivo del curso"
+      <label for="obj">* Objetivo:</label>
+      <input type="text" name="obj" class="form-control" 
+      placeholder="Escribe el objetivo del curso"
       value="<?php 
-      print isset($datos['data']['publico'])?$datos['data']['publico']:''; 
+      print isset($datos['data']['obj'])?$datos['data']['obj']:''; 
       ?>"
       <?php
       if (isset($datos["baja"])) {
@@ -130,11 +130,11 @@
     </div>
 
       <div class="form-group text-left">
-      <label for="objetivo">* Proposito:</label>
-      <input type="text" name="objetivo" class="form-control" 
-      placeholder="Escribe los objetivos del libro"
+      <label for="beneficios">* Beneficios:</label>
+      <input type="text" name="beneficios" class="form-control" 
+      placeholder="Escribe los beneficios del producto"
       value="<?php 
-      print isset($datos['data']['objetivo'])?$datos['data']['objetivo']:''; 
+      print isset($datos['data']['beneficios'])?$datos['data']['beneficios']:''; 
       ?>"
       <?php
       if (isset($datos["baja"])) {
@@ -145,7 +145,7 @@
     </div>
 
       <div class="form-group text-left">
-      <label for="necesario">* Condimentos adicionales:</label>
+      <label for="necesario">* Conocimientos necesarios previos:</label>
       <input type="text" name="necesario" class="form-control" 
       placeholder="Escribe los conocimientos necesarios previos"
       value="<?php 

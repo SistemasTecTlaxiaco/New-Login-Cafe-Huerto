@@ -83,13 +83,13 @@ class AdmonProductos extends Controlador
       //
       $status = $_POST['status'] ?? "";
       //Libros
-      $autor = Valida::cadena($_POST['autor'] ?? "");
-      $editorial = Valida::cadena($_POST['editorial'] ?? "");
-      $pag = Valida::numero($_POST['pag'] ?? "");
-      if(empty($pag)) $pag = 0;
+      $prov = Valida::cadena($_POST['prov'] ?? "");
+      $direccion = Valida::cadena($_POST['direccion'] ?? "");
+      $tam = Valida::numero($_POST['tam'] ?? "");
+      if(empty($tam)) $tam = 0;
       //Cursos
-      $publico = Valida::cadena($_POST['publico'] ?? "");
-      $objetivo = Valida::cadena($_POST['objetivo'] ?? "");
+      $obj = Valida::cadena($_POST['obj'] ?? "");
+      $beneficios = Valida::cadena($_POST['beneficios'] ?? "");
       $necesario = Valida::cadena($_POST['necesario'] ?? "");
 
       //Validamos la información
@@ -118,25 +118,25 @@ class AdmonProductos extends Controlador
       }
       //1 = curso
       if($tipo==1){
-        if(empty($publico)){
-          array_push($errores,"La preparacion del producto es requerido");
+        if(empty($obj)){
+          array_push($errores,"El objetivo del curso es requerido");
         }
-        if(empty($objetivo)){
-          array_push($errores,"El tipo de tostado es requeridos");
+        if(empty($obj)){
+          array_push($errores,"Los objetivos del curso son requeridos");
         }
-        if(empty($necesario)){
+        if(empty($beneficios)){
           array_push($errores,"Los requisitos necesarios del curso son requeridos");
         }
       } else if($tipo==2){
         //2 = libro
-        if(empty($autor)){
+        if(empty($prov)){
           array_push($errores,"El proveedor del producto es requerido.");
         }
-        if(empty($editorial)){
+        if(empty($direccion)){
           array_push($errores,"La direccion es requerida.");
         }
-        if(!is_numeric($pag)){
-          array_push($errores,"El tamaño del producto es requerido.");
+        if(!is_numeric($tam)){
+          array_push($errores,"El tamaño del producto debe de ser un número.");
         }
       } else {
         array_push($errores,"Debes de seleccionar un tipo de producto.");
@@ -167,11 +167,11 @@ class AdmonProductos extends Controlador
         "tipo" => $tipo,
         "nombre" => $nombre,
         "descripcion" => $descripcion,
-        "autor" => $autor,
-        "editorial" => $editorial,
-        "pag" => $pag,
-        "publico" => $publico,
-        "objetivo" => $objetivo,
+        "prov" => $prov,
+        "direccion" => $direccion,
+        "tam" => $tam,
+        "obj" => $obj,
+        "beneficios" => $beneficios,
         "necesario" => $necesario,
         "precio" => $precio,
         "descuento" => $descuento,

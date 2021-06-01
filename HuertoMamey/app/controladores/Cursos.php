@@ -2,7 +2,7 @@
 /**
  * Controlador Cursos
  */
-class Cafe extends Controlador{
+class Cursos extends Controlador{
   private $modelo;
 
   function __construct()
@@ -24,7 +24,7 @@ class Cafe extends Controlador{
         "data" => $data,
         "menu" => true
       ];
-      $this->vista("cafeGranoVista",$datos);
+      $this->vista("cursosVista",$datos);
     } else {
       header("location:".RUTA);
     }

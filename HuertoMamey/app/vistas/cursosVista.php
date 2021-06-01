@@ -1,5 +1,5 @@
 <?php include_once("encabezado.php"); ?>
-        <h1 class="text-center">Cafe en grano</h1>
+        <h1 class="text-center">Cursos en línea</h1>
         <div class="card p-4 bg-light">
           <?php
             $ren = 0;
