@@ -11,20 +11,20 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a href="<?php print RUTA."tienda"; ?>" class="navbar-brand">Cafe huerto el mamey</a>
+    <a href="<?php print RUTA."tienda"; ?>" class="navbar-brand">Huerto el mamey</a>
     <div class="collapse navbar-collapse" id="menu">
     <?php if ($datos["menu"]) {
       print "<ul class='navbar-nav mr-auto mt-2 mt-lg-0'>";
       print "<li class='nav-item'>";
       print "<a href='".RUTA."cursos' class='nav-link ";
       if(isset($datos["activo"]) && $datos["activo"]=="cursos") print "active";
-      print "'>Cafe en grano</a>";
+      print "'>Cursos</a>";
       print "</li>";
       //
       print "<li class='nav-item'>";
       print "<a href='".RUTA."libros' class='nav-link ";
       if(isset($datos["activo"]) && $datos["activo"]=="libros") print "active";
-      print "'>Cafe preparado</a>";
+      print "'>Cafes</a>";
       print "</li>";
       //
       print "<li class='nav-item'>";
