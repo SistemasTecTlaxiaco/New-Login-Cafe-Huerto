@@ -1,5 +1,5 @@
 <?php
-define('URL','https://ec2-3-233-7-12.compute-1.amazonaws.com/Cafehuertomamey/');
+define('URL','https://ec2-3-233-7-12.compute-1.amazonaws.com/');
 define('HOST', 'ec2-3-233-7-12.compute-1.amazonaws.com: 5432');
 define('DB', 'd3u2kusjck5hjp');
 define('USER', 'uiipaszkawomio');
