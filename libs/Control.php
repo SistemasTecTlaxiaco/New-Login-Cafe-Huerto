@@ -10,12 +10,12 @@ class Control{
   function __construct(){
     $url = $this->separarURL();
     
-    if($url!="" && file_exists("app/controladores/".ucwords($url[0]).".php")){
+    if($url!="" && file_exists("controllers/".ucwords($url[0]).".php")){
       $this->controlador = ucwords($url[0]);
       unset($url[0]);
     }
     //Cargando la clase del controlador
-    require_once("app/controladores/".ucwords($this->controlador).".php");
+    require_once("controllers/".ucwords($this->controlador).".php");
     //Instanciando la clase controlador
     $this->controlador = new $this->controlador;
 

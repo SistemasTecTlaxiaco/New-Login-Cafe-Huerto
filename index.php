@@ -1,9 +1,11 @@
 <?php
-require_once("inicio.php");
+/* Inicio carga las clases iniciales */
+define("LLAVE","sistemas6us");
+require_once 'libs/database.php';
+require_once 'libs/Controlador.php';
+require_once 'libs/Control.php';
+require_once 'libs/Sesion.php';
+require_once 'libs/Valida.php';
+require_once 'config/config.php';
 $control = new Control();
-if ($_SERVER['REQUEST_METHOD']=="POST") {
-      //Recibimos la información PHP7 isset()?valor1:valor2 => valor1 ?? valor2
-      $tipo = $_POST['foto'] ?? "";
-      print $tipo;
-}
 ?>

@@ -50,7 +50,7 @@ class Sesion{
 
   public function totalCarrito($idUsuario)
   {
-    $db = new MySQLdb();
+    $db = new database();
     $sql = "SELECT SUM(p.precio * c.cantidad) - ";
     $sql.= "SUM(c.descuento) + SUM(c.envio) as tot ";
     $sql.= "FROM carrito as c, productos as p ";
