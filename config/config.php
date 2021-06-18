@@ -1,7 +1,7 @@
 <?php
-define('URL','https://ec2-3-233-7-12.compute-1.amazonaws.com/');
-define('HOST', 'ec2-3-233-7-12.compute-1.amazonaws.com: 5432');
-define('DB', 'd3u2kusjck5hjp');
-define('USER', 'uiipaszkawomio');
-define('PASSWORD', '8e967f3f62cc7a82ba550d6165aa4b348abfcb624448479471977f5de46684b6');
+define('URL','https://log-cafemamey.herokuapp.com/');
+define('HOST', 'localhost');
+define('DB', 'dbtiendacafe');
+define('USER', 'root');
+define('PASSWORD', '');
 ?>
